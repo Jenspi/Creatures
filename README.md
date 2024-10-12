@@ -1,19 +1,28 @@
 # Creatures
+
 Fall 2024 Game Jam at the University of New Orleans via IGDA!
 
+# Demo
+
+See our demo [here]()! ^.^
+
+Play our game on [itch.io]() (coming soon)! >.<
+
 ### Collaborators
-Eddie Castro
 
-Jenny Spicer
+Eddie Castro– [LinkedIn]() ... [GitHub]()
 
-Rima Murad
+Jenny Spicer– [LinkedIn](www.linkedin.com/in/jenspi) ... [GitHub](www.github.com/jenspi)
 
-Christina Scavo
+Rima Murad– [LinkedIn]() ... [GitHub]()
 
-Richy (???)
+Christina Scavo– [LinkedIn]() ... [GitHub]()
 
-Daniel Nguyen
+Richy (???)– [LinkedIn]() ... [GitHub]() ... [other site that music people use]()
+
+Daniel Nguyen– [LinkedIn]() ... [GitHub]()
 
 
 ### Acknowledgements
+
 * itch.io
