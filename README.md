@@ -14,7 +14,7 @@ Eddie Castro– [LinkedIn]() ... [GitHub]()
 
 Jenny Spicer– [LinkedIn](www.linkedin.com/in/jenspi) ... [GitHub](www.github.com/jenspi)
 
-Rima Murad– [LinkedIn]https://www.linkedin.com/in/rima-murad/() ... [GitHub]https://github.com/Rima-Murad()
+Rima Murad– [LinkedIn](https://www.linkedin.com/in/rima-murad/) ... [GitHub](https://github.com/Rima-Murad)
 
 Christina Scavo– [LinkedIn]() ... [GitHub]()
 
