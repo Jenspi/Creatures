@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialization of variables
+// Code by Jenny Spicer
 
 score = 0;
 lives = 3;

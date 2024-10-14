@@ -23,7 +23,7 @@
   ],
   "name":"spr_ghost",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":75,
+    "xorigin":44,
     "yorigin":83,
   },
   "swatchColours":null,

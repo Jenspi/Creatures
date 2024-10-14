@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Spawn food every 60ms
+// Code by Jenny Spicer
 
 spawn_food();
 alarm[0] = duration;
