@@ -1,7 +1,7 @@
 //moves = [ "m", "a", "h", "s", "p", "l", "", "", "", "" ];
 //moves_code = [ 77, 65, 72, 83, 80, 76, "", "", "", "" ];
 
-// [text, move code, score, timer]
+// [text, move code, score, timer, animation name]
 // idea is to have first letter be worth a medium number, and last letter be worth a lot
 // timer will also gradually get lower
 moves = [
@@ -43,6 +43,8 @@ function update_display() {
 	obj_third_box.text_code = moves[third_index][1];
 	obj_third_box.score = moves[third_index][2];
 	obj_third_box.timer = moves[third_index][3];
+	
+	
 }
 
 // initial start function
