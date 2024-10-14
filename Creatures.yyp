@@ -31,16 +31,23 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Creatures",
   "resources":[
+    {"id":{"name":"font_roomeditor","path":"fonts/font_roomeditor/font_roomeditor.yy",},},
+    {"id":{"name":"obj_button_feed","path":"objects/obj_button_feed/obj_button_feed.yy",},},
+    {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
     {"id":{"name":"obj_food","path":"objects/obj_food/obj_food.yy",},},
     {"id":{"name":"obj_monster","path":"objects/obj_monster/obj_monster.yy",},},
     {"id":{"name":"obj_spawn_mgr","path":"objects/obj_spawn_mgr/obj_spawn_mgr.yy",},},
     {"id":{"name":"rm_jennyrima","path":"rooms/rm_jennyrima/rm_jennyrima.yy",},},
+    {"id":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_background_main","path":"sprites/spr_background_main/spr_background_main.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
+    {"id":{"name":"spr_button_feed","path":"sprites/spr_button_feed/spr_button_feed.yy",},},
+    {"id":{"name":"spr_button_play","path":"sprites/spr_button_play/spr_button_play.yy",},},
     {"id":{"name":"spr_food_bad","path":"sprites/spr_food_bad/spr_food_bad.yy",},},
     {"id":{"name":"spr_food_good","path":"sprites/spr_food_good/spr_food_good.yy",},},
     {"id":{"name":"spr_ghost_r","path":"sprites/spr_ghost_r/spr_ghost_r.yy",},},
@@ -51,6 +58,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_jennyrima","path":"rooms/rm_jennyrima/rm_jennyrima.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
