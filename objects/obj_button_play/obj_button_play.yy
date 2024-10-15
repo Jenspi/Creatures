@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_button_play",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_button_play",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_button_play",
+    "path":"sprites/spr_button_play/spr_button_play.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
