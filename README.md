@@ -12,15 +12,15 @@ Play our game on [itch.io]() (coming soon)! >.<
 
 ### Programmers
 
-* Eddie Castro– [LinkedIn]() ... [GitHub]()
+* Eddie Castro– [LinkedIn](https://www.linkedin.com/in/eacastr1/) ... [GitHub](https://github.com/eacastr1)
 * Jenny Spicer– [LinkedIn](www.linkedin.com/in/jenspi) ... [GitHub](www.github.com/jenspi)
 * Rima Murad– [LinkedIn](https://www.linkedin.com/in/rima-murad/) ... [GitHub](https://github.com/Rima-Murad)
-* Daniel Nguyen– [LinkedIn]() ... [GitHub]()
+* Daniel Nguyen– [LinkedIn](https://www.linkedin.com/in/daniel-nguyen-541530226/) ... [GitHub](https://github.com/thisisdaniel1)
 
 ### Assets
 
-* Christina Scavo– [LinkedIn]() ... [GitHub]()
-* Richy (???)– [LinkedIn]() ... [GitHub]() ... [other site that music people use]()
+* Christina Scavo– [LinkedIn](https://www.linkedin.com/in/cscavo/) ... [GitHub]()
+* Richard Robinson– [LinkedIn](https://www.linkedin.com/in/richard-robinson-ba0b92266/) ... [GitHub]() ... [other site that music people use]()
 
 
 

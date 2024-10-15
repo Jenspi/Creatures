@@ -13,5 +13,6 @@ if (obj_first_box.text == "Congrats, press '+' to exit."){
 // code for +
 if (keyboard_check_pressed(187) && hasWonRhythm = true)
 {
-	room_goto(3);
+	audio_stop_sound(GhostDisco160bpm);
+	room_goto(RM_Main_Scene);
 }

@@ -36,7 +36,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Creatures",
   "resources":[
@@ -70,6 +70,7 @@
     {"id":{"name":"move_spinning_ghoul","path":"sequences/move_spinning_ghoul/move_spinning_ghoul.yy",},},
     {"id":{"name":"move_template","path":"sequences/move_template/move_template.yy",},},
     {"id":{"name":"move_zombie_walk","path":"sequences/move_zombie_walk/move_zombie_walk.yy",},},
+    {"id":{"name":"GhostDisco160bpm","path":"sounds/GhostDisco160bpm/GhostDisco160bpm.yy",},},
     {"id":{"name":"DanceScoreboardSprite","path":"sprites/DanceScoreboardSprite/DanceScoreboardSprite.yy",},},
     {"id":{"name":"DiscoFloor","path":"sprites/DiscoFloor/DiscoFloor.yy",},},
     {"id":{"name":"ghost_body_no_arms","path":"sprites/ghost_body_no_arms/ghost_body_no_arms.yy",},},
@@ -100,10 +101,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
-    {"roomId":{"name":"rm_jennyrima","path":"rooms/rm_jennyrima/rm_jennyrima.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"DanceFloor","path":"rooms/DanceFloor/DanceFloor.yy",},},
+    {"roomId":{"name":"rm_jennyrima","path":"rooms/rm_jennyrima/rm_jennyrima.yy",},},
+    {"roomId":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

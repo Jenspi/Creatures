@@ -1,174 +1,179 @@
-//moves = [ "m", "a", "h", "s", "p", "l", "", "", "", "" ];
-//moves_code = [ 77, 65, 72, 83, 80, 76, "", "", "", "" ];
+
+
+audio_play_sound(GhostDisco160bpm, 0, true);
+
 
 // [text, move code, score, timer, animation name]
 // idea is to have first letter be worth a medium number, and last letter be worth a lot
 // timer will also gradually get lower
 moves = [
 	[".", 190, 0, 0, ""],
-	["i", 73, 4, 5, "move_mime_flex"],
-	["a", 65, 2, 4, "move_mime_flex"],
-	["m", 77, 2, 4, "move_mime_flex"],
-	["a", 65, 2, 4, "move_mime_flex"],
-	["g", 71, 2, 3, "move_mime_flex"],
-	["h", 72, 10, 2, "move_mime_flex"],
-	["o", 79, 0, 0, "move_mime_flex"],
-	["s", 83, 0, 0, "move_mime_flex"],
-	["t", 84, 0, 0, "move_mime_flex"],
-	["a", 65, 0, 0, "move_eye_juggle"],
-	["g", 71, 0, 0, "move_eye_juggle"],
-	["h", 72, 0, 0, "move_eye_juggle"],
-	["o", 79, 0, 0, "move_eye_juggle"],
-	["s", 83, 0, 0, "move_eye_juggle"],
-	["t", 84, 0, 0, "move_eye_juggle"],
-	["y", 89, 0, 0, "move_eye_juggle"],
-	["g", 71, 0, 0, "move_eye_juggle"],
-	["h", 72, 0, 0, "move_eye_juggle"],
-	["o", 79, 0, 0, "move_eye_juggle"],
-	["s", 83, 0, 0, "move_eye_juggle"],
-	["t", 84, 0, 0, "move_eye_juggle"],
+	["i", 73, 4, 5, "Mime Flex"],
+	["a", 65, 2, 4, "Mime Flex"],
+	["m", 77, 2, 4, "Mime Flex"],
+	["a", 65, 2, 4, "Mime Flex"],
+	["g", 71, 2, 3, "Mime Flex"],
+	["h", 72, 10, 2, "Mime Flex"],
+	["o", 79, 0, 0, "Mime Flex"],
+	["s", 83, 0, 0, "Mime Flex"],
+	["t", 84, 0, 0, "Mime Flex"],
+	["a", 65, 0, 0, "Eye Juggle"],
+	["g", 71, 0, 0, "Eye Juggle"],
+	["h", 72, 0, 0, "Eye Juggle"],
+	["o", 79, 0, 0, "Eye Juggle"],
+	["s", 83, 0, 0, "Eye Juggle"],
+	["t", 84, 0, 0, "Eye Juggle"],
+	["y", 89, 0, 0, "Eye Juggle"],
+	["g", 71, 0, 0, "Eye Juggle"],
+	["h", 72, 0, 0, "Eye Juggle"],
+	["o", 79, 0, 0, "Eye Juggle"],
+	["s", 83, 0, 0, "Eye Juggle"],
+	["t", 84, 0, 0, "Eye Juggle"],
 	
-	["i", 73, 0, 0, "move_ghostly_spectre"],
-	["h", 72, 0, 0, "move_ghostly_spectre"],
-	["a", 65, 0, 0, "move_ghostly_spectre"],
-	["u", 85, 0, 0, "move_ghostly_spectre"],
-	["n", 78, 0, 0, "move_ghostly_spectre"],
-	["t", 84, 0, 0, "move_ghostly_spectre"],
-	["f", 70, 0, 0, "move_ghostly_spectre"],
-	["o", 79, 0, 0, "move_ghostly_spectre"],
-	["o", 79, 0, 0, "move_ghostly_spectre"],
-	["l", 76, 0, 0, "move_ghostly_spectre"],
-	["s", 83, 0, 0, "move_ghostly_spectre"],
+	["i", 73, 0, 0, "Ghostly Spectre"],
+	["h", 72, 0, 0, "Ghostly Spectre"],
+	["a", 65, 0, 0, "Ghostly Spectre"],
+	["u", 85, 0, 0, "Ghostly Spectre"],
+	["n", 78, 0, 0, "Ghostly Spectre"],
+	["t", 84, 0, 0, "Ghostly Spectre"],
+	["f", 70, 0, 0, "Ghostly Spectre"],
+	["o", 79, 0, 0, "Ghostly Spectre"],
+	["o", 79, 0, 0, "Ghostly Spectre"],
+	["l", 76, 0, 0, "Ghostly Spectre"],
+	["s", 83, 0, 0, "Ghostly Spectre"],
 	
-	["i", 73, 0, 0, "move_candy_cane"],
-	["f", 70, 0, 0, "move_candy_cane"],
-	["l", 76, 0, 0, "move_candy_cane"],
-	["a", 65, 0, 0, "move_candy_cane"],
-	["u", 85, 0, 0, "move_candy_cane"],
-	["n", 78, 0, 0, "move_candy_cane"],
-	["t", 84, 0, 0, "move_candy_cane"],
-	["r", 82, 0, 0, "move_candy_cane"],
-	["u", 85, 0, 0, "move_candy_cane"],
-	["l", 76, 0, 0, "move_candy_cane"],
-	["e", 69, 0, 0, "move_candy_cane"],
-	["s", 83, 0, 0, "move_candy_cane"],
+	["i", 73, 0, 0, "Candy Cane"],
+	["f", 70, 0, 0, "Candy Cane"],
+	["l", 76, 0, 0, "Candy Cane"],
+	["a", 65, 0, 0, "Candy Cane"],
+	["u", 85, 0, 0, "Candy Cane"],
+	["n", 78, 0, 0, "Candy Cane"],
+	["t", 84, 0, 0, "Candy Cane"],
+	["r", 82, 0, 0, "Candy Cane"],
+	["u", 85, 0, 0, "Candy Cane"],
+	["l", 76, 0, 0, "Candy Cane"],
+	["e", 69, 0, 0, "Candy Cane"],
+	["s", 83, 0, 0, "Candy Cane"],
 	
-	["i", 73, 0, 0, "move_spinning_ghoul"],
-	["a", 65, 0, 0, "move_spinning_ghoul"],
-	["m", 77, 0, 0, "move_spinning_ghoul"],
-	["a", 65, 0, 0, "move_spinning_ghoul"],
-	["c", 67, 0, 0, "move_spinning_ghoul"],
-	["o", 79, 0, 0, "move_spinning_ghoul"],
-	["n", 78, 0, 0, "move_spinning_ghoul"],
-	["f", 70, 0, 0, "move_spinning_ghoul"],
-	["i", 73, 0, 0, "move_spinning_ghoul"],
-	["d", 68, 0, 0, "move_spinning_ghoul"],
-	["a", 65, 0, 0, "move_spinning_ghoul"],
-	["n", 78, 0, 0, "move_spinning_ghoul"],
-	["t", 84, 0, 0, "move_spinning_ghoul"],
+	["i", 73, 0, 0, "Spinning Ghoul"],
+	["a", 65, 0, 0, "Spinning Ghoul"],
+	["m", 77, 0, 0, "Spinning Ghoul"],
+	["a", 65, 0, 0, "Spinning Ghoul"],
+	["c", 67, 0, 0, "Spinning Ghoul"],
+	["o", 79, 0, 0, "Spinning Ghoul"],
+	["n", 78, 0, 0, "Spinning Ghoul"],
+	["f", 70, 0, 0, "Spinning Ghoul"],
+	["i", 73, 0, 0, "Spinning Ghoul"],
+	["d", 68, 0, 0, "Spinning Ghoul"],
+	["a", 65, 0, 0, "Spinning Ghoul"],
+	["n", 78, 0, 0, "Spinning Ghoul"],
+	["t", 84, 0, 0, "Spinning Ghoul"],
 	
-	["t", 84, 0, 0, "move_banshee_howl"],
-	["o", 79, 0, 0, "move_banshee_howl"],
-	["g", 71, 0, 0, "move_banshee_howl"],
-	["h", 72, 0, 0, "move_banshee_howl"],
-	["o", 79, 0, 0, "move_banshee_howl"],
-	["u", 85, 0, 0, "move_banshee_howl"],
-	["l", 76, 0, 0, "move_banshee_howl"],
-	["s", 83, 0, 0, "move_banshee_howl"],
-	["z", 90, 0, 0, "move_banshee_howl"],
+	["t", 84, 0, 0, "Banshee Howl"],
+	["o", 79, 0, 0, "Banshee Howl"],
+	["g", 71, 0, 0, "Banshee Howl"],
+	["h", 72, 0, 0, "Banshee Howl"],
+	["o", 79, 0, 0, "Banshee Howl"],
+	["u", 85, 0, 0, "Banshee Howl"],
+	["l", 76, 0, 0, "Banshee Howl"],
+	["s", 83, 0, 0, "Banshee Howl"],
+	["z", 90, 0, 0, "Banshee Howl"],
 	
-	["h", 72, 0, 0, "move_candy_cane"],
-	["e", 69, 0, 0, "move_candy_cane"],
-	["y", 89, 0, 0, "move_candy_cane"],
-	["y", 89, 0, 0, "move_candy_cane"],
-	["o", 79, 0, 0, "move_candy_cane"],
-	["u", 85, 0, 0, "move_candy_cane"],
-	["l", 76, 0, 0, "move_candy_cane"],
-	["o", 79, 0, 0, "move_candy_cane"],
-	["o", 79, 0, 0, "move_candy_cane"],
-	["k", 75, 0, 0, "move_candy_cane"],
-	["i", 73, 0, 0, "move_candy_cane"],
-	["n", 78, 0, 0, "move_candy_cane"],
-	["g", 71, 0, 0, "move_candy_cane"],
-	["m", 77, 0, 0, "move_candy_cane"],
-	["i", 73, 0, 0, "move_candy_cane"],
-	["g", 71, 0, 0, "move_candy_cane"],
-	["h", 72, 0, 0, "move_candy_cane"],
-	["t", 84, 0, 0, "move_candy_cane"],
-	["y", 89, 0, 0, "move_candy_cane"],
-	["p", 80, 0, 0, "move_candy_cane"],
-	["a", 65, 0, 0, "move_candy_cane"],
-	["l", 76, 0, 0, "move_candy_cane"],
-	["e", 69, 0, 0, "move_candy_cane"],
+	["h", 72, 0, 0, "Candy Cane"],
+	["e", 69, 0, 0, "Candy Cane"],
+	["y", 89, 0, 0, "Candy Cane"],
+	["y", 89, 0, 0, "Candy Cane"],
+	["o", 79, 0, 0, "Candy Cane"],
+	["u", 85, 0, 0, "Candy Cane"],
+	["l", 76, 0, 0, "Candy Cane"],
+	["o", 79, 0, 0, "Candy Cane"],
+	["o", 79, 0, 0, "Candy Cane"],
+	["k", 75, 0, 0, "Candy Cane"],
+	["i", 73, 0, 0, "Candy Cane"],
+	["n", 78, 0, 0, "Candy Cane"],
+	["g", 71, 0, 0, "Candy Cane"],
+	["m", 77, 0, 0, "Candy Cane"],
+	["i", 73, 0, 0, "Candy Cane"],
+	["g", 71, 0, 0, "Candy Cane"],
+	["h", 72, 0, 0, "Candy Cane"],
+	["t", 84, 0, 0, "Candy Cane"],
+	["y", 89, 0, 0, "Candy Cane"],
+	["p", 80, 0, 0, "Candy Cane"],
+	["a", 65, 0, 0, "Candy Cane"],
+	["l", 76, 0, 0, "Candy Cane"],
+	["e", 69, 0, 0, "Candy Cane"],
 	
-	["y", 89, 0, 0, "move_banshee_howl"],
-	["o", 79, 0, 0, "move_banshee_howl"],
-	["u", 85, 0, 0, "move_banshee_howl"],
-	["a", 65, 0, 0, "move_banshee_howl"],
-	["g", 71, 0, 0, "move_banshee_howl"],
-	["h", 72, 0, 0, "move_banshee_howl"],
-	["o", 79, 0, 0, "move_banshee_howl"],
-	["s", 83, 0, 0, "move_banshee_howl"],
-	["t", 84, 0, 0, "move_banshee_howl"],
-	["y", 89, 0, 0, "move_banshee_howl"],
-	["g", 71, 0, 0, "move_banshee_howl"],
-	["h", 72, 0, 0, "move_banshee_howl"],
-	["o", 79, 0, 0, "move_banshee_howl"],
-	["s", 83, 0, 0, "move_banshee_howl"],
-	["t", 84, 0, 0, "move_banshee_howl"],
+	["y", 89, 0, 0, "Banshee Howl"],
+	["o", 79, 0, 0, "Banshee Howl"],
+	["u", 85, 0, 0, "Banshee Howl"],
+	["a", 65, 0, 0, "Banshee Howl"],
+	["g", 71, 0, 0, "Banshee Howl"],
+	["h", 72, 0, 0, "Banshee Howl"],
+	["o", 79, 0, 0, "Banshee Howl"],
+	["s", 83, 0, 0, "Banshee Howl"],
+	["t", 84, 0, 0, "Banshee Howl"],
+	["y", 89, 0, 0, "Banshee Howl"],
+	["g", 71, 0, 0, "Banshee Howl"],
+	["h", 72, 0, 0, "Banshee Howl"],
+	["o", 79, 0, 0, "Banshee Howl"],
+	["s", 83, 0, 0, "Banshee Howl"],
+	["t", 84, 0, 0, "Banshee Howl"],
 	
-	["f", 70, 0, 0, "move_floppy_shuffle"],
-	["l", 76, 0, 0, "move_floppy_shuffle"],
-	["y", 89, 0, 0, "move_floppy_shuffle"],
-	["f", 70, 0, 0, "move_floppy_shuffle"],
-	["l", 76, 0, 0, "move_floppy_shuffle"],
-	["y", 89, 0, 0, "move_floppy_shuffle"],
-	["b", 66, 0, 0, "move_floppy_shuffle"],
-	["u", 85, 0, 0, "move_floppy_shuffle"],
-	["c", 67, 0, 0, "move_floppy_shuffle"],
-	["k", 75, 0, 0, "move_floppy_shuffle"],
-	["e", 69, 0, 0, "move_floppy_shuffle"],
-	["y", 89, 0, 0, "move_floppy_shuffle"],
-	["e", 69, 0, 0, "move_floppy_shuffle"],
+	["f", 70, 0, 0, "Floppy Shuffle"],
+	["l", 76, 0, 0, "Floppy Shuffle"],
+	["y", 89, 0, 0, "Floppy Shuffle"],
+	["f", 70, 0, 0, "Floppy Shuffle"],
+	["l", 76, 0, 0, "Floppy Shuffle"],
+	["y", 89, 0, 0, "Floppy Shuffle"],
+	["b", 66, 0, 0, "Floppy Shuffle"],
+	["u", 85, 0, 0, "Floppy Shuffle"],
+	["c", 67, 0, 0, "Floppy Shuffle"],
+	["k", 75, 0, 0, "Floppy Shuffle"],
+	["e", 69, 0, 0, "Floppy Shuffle"],
+	["y", 89, 0, 0, "Floppy Shuffle"],
+	["e", 69, 0, 0, "Floppy Shuffle"],
 
-	["c", 67, 0, 0, "move_minotaur_charge"],
-	["a", 65, 0, 0, "move_minotaur_charge"],
-	["t", 84, 0, 0, "move_minotaur_charge"],
-	["c", 67, 0, 0, "move_minotaur_charge"],
-	["h", 72, 0, 0, "move_minotaur_charge"],
-	["y", 89, 0, 0, "move_minotaur_charge"],
-	["o", 79, 0, 0, "move_minotaur_charge"],
-	["u", 85, 0, 0, "move_minotaur_charge"],
-	["o", 79, 0, 0, "move_minotaur_charge"],
-	["n", 78, 0, 0, "move_minotaur_charge"],
-	["t", 84, 0, 0, "move_minotaur_charge"],
-	["h", 72, 0, 0, "move_minotaur_charge"],
-	["e", 69, 0, 0, "move_minotaur_charge"],
-	["h", 72, 0, 0, "move_minotaur_charge"],
-	["i", 73, 0, 0, "move_minotaur_charge"],
-	["g", 71, 0, 0, "move_minotaur_charge"],
-	["h", 72, 0, 0, "move_minotaur_charge"],
-	["s", 83, 0, 0, "move_minotaur_charge"],
-	["k", 75, 0, 0, "move_minotaur_charge"],
-	["y", 89, 0, 0, "move_minotaur_charge"],
+	["c", 67, 0, 0, "Minotaur Charge"],
+	["a", 65, 0, 0, "Minotaur Charge"],
+	["t", 84, 0, 0, "Minotaur Charge"],
+	["c", 67, 0, 0, "Minotaur Charge"],
+	["h", 72, 0, 0, "Minotaur Charge"],
+	["y", 89, 0, 0, "Minotaur Charge"],
+	["o", 79, 0, 0, "Minotaur Charge"],
+	["u", 85, 0, 0, "Minotaur Charge"],
+	["o", 79, 0, 0, "Minotaur Charge"],
+	["n", 78, 0, 0, "Minotaur Charge"],
+	["t", 84, 0, 0, "Minotaur Charge"],
+	["h", 72, 0, 0, "Minotaur Charge"],
+	["e", 69, 0, 0, "Minotaur Charge"],
+	["h", 72, 0, 0, "Minotaur Charge"],
+	["i", 73, 0, 0, "Minotaur Charge"],
+	["g", 71, 0, 0, "Minotaur Charge"],
+	["h", 72, 0, 0, "Minotaur Charge"],
+	["s", 83, 0, 0, "Minotaur Charge"],
+	["k", 75, 0, 0, "Minotaur Charge"],
+	["y", 89, 0, 0, "Minotaur Charge"],
 	
-	["b", 66, 0, 0, "move_zombie_walk"],
-	["y", 89, 0, 0, "move_zombie_walk"],
-	["e", 69, 0, 0, "move_zombie_walk"],
-	["b", 66, 0, 0, "move_zombie_walk"],
-	["y", 89, 0, 0, "move_zombie_walk"],
-	["e", 69, 0, 0, "move_zombie_walk"],
-	["s", 83, 0, 0, "move_zombie_walk"],
-	["k", 75, 0, 0, "move_zombie_walk"],
-	["y", 89, 0, 0, "move_zombie_walk"],
-	["g", 71, 0, 0, "move_zombie_walk"],
-	["u", 85, 0, 0, "move_zombie_walk"],
-	["y", 89, 0, 0, "move_zombie_walk"],
+	["b", 66, 0, 0, "Zombie Walk"],
+	["y", 89, 0, 0, "Zombie Walk"],
+	["e", 69, 0, 0, "Zombie Walk"],
+	["b", 66, 0, 0, "Zombie Walk"],
+	["g", 71, 0, 0, "Zombie Walk"],
+	["h", 72, 0, 0, "Zombie Walk"],
+	["o", 79, 0, 0, "Zombie Walk"],
+	["s", 83, 0, 0, "Zombie Walk"],
+	["t", 84, 0, 0, "Zombie Walk"],
+	["y", 89, 0, 0, "Zombie Walk"],
+	["g", 71, 0, 0, "Zombie Walk"],
+	["h", 72, 0, 0, "Zombie Walk"],
+	["o", 79, 0, 0, "Zombie Walk"],
+	["s", 83, 0, 0, "Zombie Walk"],
+	["t", 84, 0, 0, "Zombie Walk"],
 	
-	["Congrats, press '+' to exit.", 220, 0, 0, "move_mime_flex"],
-	["Congrats, press '+' to exit.", 220, 0, 0, "move_mime_flex"],
-	["Congrats, press '+' to exit.", 220, 0, 0, "move_mime_flex"],
-	["Congrats, press '+' to exit.", 220, 0, 0, "move_mime_flex"],
+	["Congrats, press '+' to exit.", 220, 0, 0, "Mime Flex"],
+	["Congrats, press '+' to exit.", 220, 0, 0, "Mime Flex"],
+	["Congrats, press '+' to exit.", 220, 0, 0, "Mime Flex"],
+	["Congrats, press '+' to exit.", 220, 0, 0, "Mime Flex"],
 ];
 
 first_index = -1;
@@ -219,23 +224,23 @@ function update_display() {
 	
 		switch (moves[first_index][4])
 		{
-			case "move_banshee_howl":
+			case "Banshee Howl":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_banshee_howl);
 		    break;
 			
-			case "move_candy_cane":
+			case "Candy Cane":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_candy_cane);
 		    break;
 			
-			case "move_floppy_shuffle":
+			case "Floppy Shuffle":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_floppy_shuffle);
 		    break;
 			
-			case "move_ghostly_spectre":
+			case "Ghostly Spectre":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_ghostly_spectre);
 		    break;
 			
-			case "move_minotaur_charge":
+			case "Minotaur Charge":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_minotaur_charge);
 		    break;
 			
@@ -243,19 +248,19 @@ function update_display() {
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_mummy_hug);
 		    break;
 			
-			case "move_zombie_walk":
+			case "Zombie Walk":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_zombie_walk);
 		    break;
 			
-		    case "move_mime_flex":
+		    case "Mime Flex":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_mime_flex);
 		    break;
 			
-			case "move_eye_juggle":
+			case "Eye Juggle":
 				current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_eye_juggle);
 		    break;
 
-		    case "move_spinning_ghoul":
+		    case "Spinning Ghoul":
 		        current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_spinning_ghoul);
 		    break;
 		}
