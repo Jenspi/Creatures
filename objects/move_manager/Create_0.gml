@@ -189,6 +189,7 @@ hasStarted = false;
 // which is to check if there is a different animation
 current_animation_name = "";
 current_animation = move_template;
+current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_mummy_hug);
 
 function update_display() {
 	

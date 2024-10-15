@@ -7,7 +7,7 @@ if (keyboard_check_pressed(191) && hasStarted = false)
 
 if (obj_first_box.text == "Congrats, press '+' to exit."){
 	hasWonRhythm = true;
-	show_debug_message("won");
+	audio_play_sound(Pet_Ghost_noises_lmao, 0, false);
 }
 
 // code for +
