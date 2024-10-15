@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"group_fallmode",
+    "path":"folders/Sprites/group_fallmode.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

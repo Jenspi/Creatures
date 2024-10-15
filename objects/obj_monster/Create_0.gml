@@ -1,5 +1,6 @@
+/// @description Initialization of variables
+// Code by Jenny Spicer
 
-// variables to be used in step/other files:
 move_x = 0;
 move_y = 0;
 direction_to_face = 0;

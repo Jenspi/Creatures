@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Gravity of food
+// Code by Jenny Spicer
 
 y += my_gravity;
 

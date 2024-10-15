@@ -10,8 +10,8 @@
   "name":"obj_game_mgr",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"fall_game_objects",
+    "path":"folders/Objects/fall_game_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
