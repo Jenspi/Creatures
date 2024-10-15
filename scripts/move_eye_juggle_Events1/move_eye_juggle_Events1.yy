@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"move_eye_juggle_Events1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"move_eye_juggle_Events1",
+  "parent":{
+    "name":"Creatures",
+    "path":"Creatures.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

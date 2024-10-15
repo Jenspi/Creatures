@@ -27,9 +27,9 @@
   "name":"move_mummy_hug",
   "parent":{
     "name":"dance_moves",
-    "path":"folders/Objects/DanceObj/dance_moves.yy",
+    "path":"folders/Sequences/dance_moves.yy",
   },
-  "playback":0,
+  "playback":2,
   "playbackSpeed":10.0,
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
@@ -42,7 +42,7 @@
     {"$GMGraphicTrack":"","%Name":"ghost_right_arm","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"ghost_right_arm","path":"sprites/ghost_right_arm/ghost_right_arm.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"21387cbf-c5c3-4b36-9702-62181992139c","IsCreationKey":false,"Key":0.0,"Length":30.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
+            },"Disabled":false,"id":"1010e692-3541-4851-8334-05d62022e8e8","IsCreationKey":false,"Key":0.0,"Length":30.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"ghost_right_arm","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282960626,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -128,7 +128,7 @@
     {"$GMGraphicTrack":"","%Name":"ghost_left_arm","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"ghost_left_arm","path":"sprites/ghost_left_arm/ghost_left_arm.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"b9ef3cf1-b524-4fb9-a91c-de6f9c394133","IsCreationKey":false,"Key":-5.0,"Length":33.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
+            },"Disabled":false,"id":"2bfad37c-dcb4-4360-bfed-a1f82026e948","IsCreationKey":false,"Key":-5.0,"Length":33.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"ghost_left_arm","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294109256,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -242,7 +242,7 @@
     {"$GMGraphicTrack":"","%Name":"ghost_body_no_arms","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"ghost_body_no_arms","path":"sprites/ghost_body_no_arms/ghost_body_no_arms.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"ab0ca5c0-ae2a-4e78-8395-490fcb0f2dc6","IsCreationKey":false,"Key":0.0,"Length":30.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
+            },"Disabled":false,"id":"c59d3f41-c250-4772-ab4d-384b721b90bd","IsCreationKey":false,"Key":0.0,"Length":30.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":true,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"ghost_body_no_arms","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290201842,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
