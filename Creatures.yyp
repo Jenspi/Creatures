@@ -101,9 +101,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
     {"roomId":{"name":"DanceFloor","path":"rooms/DanceFloor/DanceFloor.yy",},},
     {"roomId":{"name":"rm_jennyrima","path":"rooms/rm_jennyrima/rm_jennyrima.yy",},},
-    {"roomId":{"name":"RM_Main_Scene","path":"rooms/RM_Main_Scene/RM_Main_Scene.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
