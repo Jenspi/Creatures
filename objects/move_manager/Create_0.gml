@@ -1,7 +1,7 @@
 //moves = [ "m", "a", "h", "s", "p", "l", "", "", "", "" ];
 //moves_code = [ 77, 65, 72, 83, 80, 76, "", "", "", "" ];
 
-// [text, move code, score, timer]
+// [text, move code, score, timer, animation name]
 // idea is to have first letter be worth a medium number, and last letter be worth a lot
 // timer will also gradually get lower
 moves = [
