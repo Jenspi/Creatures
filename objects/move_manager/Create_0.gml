@@ -1,6 +1,6 @@
 
 
-audio_play_sound(GhostDisco160bpm, 0, true);
+audio_play_sound(Mastered_Disco_Track_114bpm, 0, true);
 
 
 // [text, move code, score, timer, animation name]
@@ -158,6 +158,8 @@ moves = [
 	["y", 89, 0, 0, "Zombie Walk"],
 	["e", 69, 0, 0, "Zombie Walk"],
 	["b", 66, 0, 0, "Zombie Walk"],
+	["y", 89, 0, 0, "Zombie Walk"],
+	["e", 69, 0, 0, "Zombie Walk"],
 	["g", 71, 0, 0, "Zombie Walk"],
 	["h", 72, 0, 0, "Zombie Walk"],
 	["o", 79, 0, 0, "Zombie Walk"],
@@ -187,6 +189,7 @@ hasStarted = false;
 // which is to check if there is a different animation
 current_animation_name = "";
 current_animation = move_template;
+current_animation = layer_sequence_create("DanceMovesList", 650, 400, move_mummy_hug);
 
 function update_display() {
 	
@@ -206,6 +209,7 @@ function update_display() {
 	obj_second_box.text_code = moves[second_index][1];
 	obj_second_box.score = moves[second_index][2];
 	obj_second_box.timer = moves[second_index][3];
+	obj_second_box.animation_name = moves[second_index][4];
 	
     obj_third_box.text = moves[third_index][0];
 	obj_third_box.text_code = moves[third_index][1];
