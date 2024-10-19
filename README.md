@@ -1,4 +1,4 @@
-# Creatures Game Jam
+# ![](images/9NeiaJ.png) Creatures Game Jam
 
 Fall 2024 Game Jam at the University of New Orleans via IGDA! This event's theme was <i><strong>Creatures</strong></i>.
 
@@ -9,6 +9,7 @@ See our demo [here]()! ^.^
 Play our game on [itch.io]() (coming soon)! >.<
 
 # Collaborators
+![](Happy_Mothers_Day_Presentation_169.png)
 
 ### Programmers
 
