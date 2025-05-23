@@ -4,7 +4,7 @@ Fall 2024 Game Jam at the University of New Orleans via IGDA! This Game Jam's th
 
 # Demo & Play
 
-📌 See our demo [here](https://youtu.be/ZUOERl2Ovzs)! \^.^
+📌 See our demo [here](https://youtu.be/ZUOERl2Ovzs)! \^.^<br>
 📌 Play our game on [itch.io](igda-uno.itch.io/my-pet-monster)! >.<
 
 # Collaborators
